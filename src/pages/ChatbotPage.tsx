@@ -225,6 +225,25 @@ function ChatbotPage() {
       <div className="fixed inset-0 -z-10 bg-gray-900 opacity-50 pointer-events-none">
         <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJ3aGl0ZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMzYgMzRjMC0yLjItMS44LTQtNC00cy00IDEuOC00IDQgMS44IDQgNCA0IDQtMS44IDQtNHoiLz48L2c+PC9zdmc+')] animate-pulse-slow" />
       </div>
+
+      {/* Information section */}
+      <div className="relative mt-6 sm:mt-8">
+          <div className="absolute inset-0 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50"></div>
+          
+          <div className="relative p-4 sm:p-6 rounded-xl">
+            <h2 className="text-lg sm:text-xl font-semibold mb-2 flex items-center gap-2">
+              <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+                About This Tool
+              </span>
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+              This AI assistant provides information about Alzheimer's disease and dementia. It can help you understand symptoms, 
+              diagnostic procedures, and care strategies. While this tool offers educational information, it should not replace 
+              professional medical advice. Always consult with healthcare professionals for diagnosis and treatment.
+            </p>
+          </div>
+        </div>
     </div>
   );
 }
